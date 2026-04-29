@@ -25,7 +25,7 @@ http.createServer((req, res) => {
 
   const body = `data=${encodeURIComponent(query)}`;
   const options = {
-    hostname: 'overpass-api.de',
+    hostname: 'overpass.private.coffee',
     path: '/api/interpreter',
     method: 'POST',
     headers: {
