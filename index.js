@@ -25,13 +25,13 @@ http.createServer((req, res) => {
 
   const body = `data=${encodeURIComponent(query)}`;
   const options = {
-    hostname: 'overpass.openstreetmap.fr',
+    hostname: 'overpass-api.de',
     path: '/api/interpreter',
     method: 'POST',
     headers: {
       'Content-Type': 'application/x-www-form-urlencoded',
       'Content-Length': Buffer.byteLength(body),
-      'User-Agent': 'overpass-proxy/1.0'
+      'User-Agent': 'Mozilla/5.0 (compatible; overpass-proxy/1.0)'
     }
   };
 
